@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="DBHandIn3.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Dentist MasterPage</title>
+    <link href="~/Styles/StyleMaster1.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .menu {
+            text-align: center;
+            text-align: justify;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="header">
+                <div class="myMenuBar">
+                    <asp:Menu ID="Navigationmenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" >
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/WelcomePage.aspx" Text="Home"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Treatments.aspx" Text="Treatments"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/ReservatonsPatient.aspx" Text="Reservations"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Patients.aspx" Text="Patients"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Log In"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Logout.aspx" Text="Log Out"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin.aspx" Text="Admin page"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </div>
+                <br />
+                
+                <div class="header-wrap">
+                    <br />
+                <br />
+                    <asp:Label ID="Label1" runat="server" CssClass="headertext" EnableTheming="false" Text="The Østerbro`s Dental Clinic – Dr. Jensen A/S"></asp:Label>
+                <br />
+                </div>
+            </div>
+        </div>
+        <br />
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

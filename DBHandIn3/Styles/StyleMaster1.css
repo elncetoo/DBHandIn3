@@ -1,0 +1,63 @@
+﻿.headertext {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    margin-left: -4%;
+    color: #6CBCFD;
+}
+
+.toptext {
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/* TAB MENU   -   from old default master page
+----------------------------------------------------------*/
+
+div.myMenuBar {
+    margin: 3px;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+}
+
+div.menu {
+    padding: 2px 0px 2px 8px;
+}
+
+    div.menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        div.menu ul li a, div.menu ul li a:visited {
+            border-left: 1px solid #bbb;
+            border-right: 1px solid #bbb;
+            display: block;
+            color: white;
+            text-align: center;
+            line-height: 1.55em;
+            padding: 4px 20px;
+            white-space: nowrap;
+            text-decoration: none;
+            font-family: Helvetica, sans-serif;
+            font-size: 13px;
+        }
+
+
+            div.menu ul li a:hover {
+                background-color: #6CBCFD;
+                color: white;
+                text-decoration: none;
+            }
+
+            div.menu ul li a:active {
+                background-color: #6CBCFD;
+            }
